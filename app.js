@@ -73,7 +73,7 @@ app.put("/laptops/:id",(req,res)=>{
 app.delete("/laptops/:id",(req,res)=>{
     const id = req.params.id;
     console.log("Laptop eliminada con id: ",id)
-    res.send("Laptop Eliminada");
+    res.status(200).send()
 });
 
 app.listen(PUERTO, () => {
